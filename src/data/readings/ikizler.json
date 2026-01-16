@@ -1,0 +1,32 @@
+{
+  "gunluk": {
+    "title": "İkizler Günlük Yorum",
+    "dateLabel": "Bugün",
+    "sections": {
+      "ask": "Bugün aşk tarafında netlik arıyorsun. Küçük bir konuşma büyük bir yanlış anlaşılmayı çözebilir.",
+      "para": "Bugün harcamalarda “küçük kaçaklar” var. Minik kalemleri kısarsan rahat nefes alırsın.",
+      "kariyer": "Bugün iş tarafında tempo artıyor. Öncelik listesi yap, en kritik işi önce bitir.",
+      "saglik": "Bugün enerji iniş çıkış yapabilir. Su + uyku + kısa yürüyüş, klasik ama işe yarar."
+    }
+  },
+  "haftalik": {
+    "title": "İkizler Haftalık Yorum",
+    "dateLabel": "Bu hafta",
+    "sections": {
+      "ask": "Bu hafta aşk tarafında netlik arıyorsun. Küçük bir konuşma büyük bir yanlış anlaşılmayı çözebilir.",
+      "para": "Bu hafta harcamalarda “küçük kaçaklar” var. Minik kalemleri kısarsan rahat nefes alırsın.",
+      "kariyer": "Bu hafta iş tarafında tempo artıyor. Öncelik listesi yap, en kritik işi önce bitir.",
+      "saglik": "Bu hafta enerji iniş çıkış yapabilir. Su + uyku + kısa yürüyüş, klasik ama işe yarar."
+    }
+  },
+  "aylik": {
+    "title": "İkizler Aylık Yorum",
+    "dateLabel": "Bu ay",
+    "sections": {
+      "ask": "Bu ay aşk tarafında netlik arıyorsun. Küçük bir konuşma büyük bir yanlış anlaşılmayı çözebilir.",
+      "para": "Bu ay harcamalarda “küçük kaçaklar” var. Minik kalemleri kısarsan rahat nefes alırsın.",
+      "kariyer": "Bu ay iş tarafında tempo artıyor. Öncelik listesi yap, en kritik işi önce bitir.",
+      "saglik": "Bu ay enerji iniş çıkış yapabilir. Su + uyku + kısa yürüyüş, klasik ama işe yarar."
+    }
+  }
+}
