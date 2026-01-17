@@ -8,12 +8,16 @@ import About from "../pages/About";
 import Privacy from "../pages/Privacy";
 import Cookies from "../pages/Cookies";
 import Contact from "../pages/Contact";
+import RisingCalculator from "../pages/RisingCalculator";
+
 
 export default function AppRoutes() {
   return (
     <Routes>
       <Route element={<Layout />}>
         <Route path="/" element={<Home />} />
+        <Route path="/yukselen-hesapla" element={<RisingCalculator />} />
+
 
         {/* Burç sayfaları: /koc/gunluk gibi */}
         <Route path="/:sign/:period" element={<Reading />} />
