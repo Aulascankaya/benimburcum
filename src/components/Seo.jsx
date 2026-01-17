@@ -10,7 +10,26 @@ function upsertMeta(name, content) {
   tag.setAttribute("content", content);
 }
 
-export default function Seo({ title, description }) {
+function upsertJsonLd(id, json) {
+  const scriptId = `jsonld-${id}`;
+  let tag = document.getElementById(scriptId);
+
+  if (!json) {
+    if (tag) tag.remove();
+    return;
+  }
+
+  if (!tag) {
+    tag = document.createElement("script");
+    tag.type = "application/ld+json";
+    tag.id = scriptId;
+    document.head.appendChild(tag);
+  }
+
+  tag.text = JSON.stringify(json);
+}
+
+export default function Seo({ title, description, jsonLdId, jsonLd }) {
   useEffect(() => {
     const fullTitle = title ? `${title} | benimburcum.com` : "benimburcum.com";
     document.title = fullTitle;
@@ -20,7 +39,10 @@ export default function Seo({ title, description }) {
       "benimburcum.com’da tüm burçlar için günlük, haftalık ve aylık burç yorumlarını okuyun.";
 
     upsertMeta("description", desc);
-  }, [title, description]);
+
+    // JSON-LD (FAQ gibi) - SEO için
+    if (jsonLdId) upsertJsonLd(jsonLdId, jsonLd);
+  }, [title, description, jsonLdId, jsonLd]);
 
   return null;
 }
