@@ -3,30 +3,30 @@
     "title": "Başak Günlük Yorum",
     "dateLabel": "Bugün",
     "sections": {
-      "ask": "Bugün aşk tarafında netlik arıyorsun. Küçük bir konuşma büyük bir yanlış anlaşılmayı çözebilir.",
-      "para": "Bugün harcamalarda “küçük kaçaklar” var. Minik kalemleri kısarsan rahat nefes alırsın.",
-      "kariyer": "Bugün iş tarafında tempo artıyor. Öncelik listesi yap, en kritik işi önce bitir.",
-      "saglik": "Bugün enerji iniş çıkış yapabilir. Su + uyku + kısa yürüyüş, klasik ama işe yarar."
+      "ask": "İletişim aşk hayatında belirleyici olabilir.",
+      "para": "Gelir-gider dengesini gözden geçir.",
+      "kariyer": "Planlı hareket etmek avantaj sağlar.",
+      "saglik": "Enerjini dengede tut."
     }
   },
   "haftalik": {
     "title": "Başak Haftalık Yorum",
     "dateLabel": "Bu hafta",
     "sections": {
-      "ask": "Bu hafta aşk tarafında netlik arıyorsun. Küçük bir konuşma büyük bir yanlış anlaşılmayı çözebilir.",
-      "para": "Bu hafta harcamalarda “küçük kaçaklar” var. Minik kalemleri kısarsan rahat nefes alırsın.",
-      "kariyer": "Bu hafta iş tarafında tempo artıyor. Öncelik listesi yap, en kritik işi önce bitir.",
-      "saglik": "Bu hafta enerji iniş çıkış yapabilir. Su + uyku + kısa yürüyüş, klasik ama işe yarar."
+      "ask": "Duygusal konular bugün ön planda.",
+      "para": "Küçük masraflar birikebilir.",
+      "kariyer": "İş tarafında tempo artıyor.",
+      "saglik": "Enerjini dengede tut."
     }
   },
   "aylik": {
     "title": "Başak Aylık Yorum",
     "dateLabel": "Bu ay",
     "sections": {
-      "ask": "Bu ay aşk tarafında netlik arıyorsun. Küçük bir konuşma büyük bir yanlış anlaşılmayı çözebilir.",
-      "para": "Bu ay harcamalarda “küçük kaçaklar” var. Minik kalemleri kısarsan rahat nefes alırsın.",
-      "kariyer": "Bu ay iş tarafında tempo artıyor. Öncelik listesi yap, en kritik işi önce bitir.",
-      "saglik": "Bu ay enerji iniş çıkış yapabilir. Su + uyku + kısa yürüyüş, klasik ama işe yarar."
+      "ask": "Duygusal konular bugün ön planda.",
+      "para": "Harcamalarda denge önemli.",
+      "kariyer": "Yeni bir sorumluluk gündeme gelebilir.",
+      "saglik": "Uyku düzenine dikkat."
     }
   }
 }

@@ -22,18 +22,39 @@ const PERIODS = [
   { key: "aylik", label: "Aylık", dateLabel: "Bu ay" },
 ];
 
+function rand(arr) {
+  return arr[Math.floor(Math.random() * arr.length)];
+}
+
 function template(signName, periodLabel, dateLabel) {
   return {
     title: `${signName} ${periodLabel} Yorum`,
     dateLabel,
     sections: {
-      ask: `${dateLabel} aşk tarafında netlik arıyorsun. Küçük bir konuşma büyük bir yanlış anlaşılmayı çözebilir.`,
-      para: `${dateLabel} harcamalarda “küçük kaçaklar” var. Minik kalemleri kısarsan rahat nefes alırsın.`,
-      kariyer: `${dateLabel} iş tarafında tempo artıyor. Öncelik listesi yap, en kritik işi önce bitir.`,
-      saglik: `${dateLabel} enerji iniş çıkış yapabilir. Su + uyku + kısa yürüyüş, klasik ama işe yarar.`,
+      ask: rand([
+        `${dateLabel} aşk tarafında netleşme var.`,
+        `Duygusal konular bugün ön planda.`,
+        `İletişim aşk hayatında belirleyici olabilir.`,
+      ]),
+      para: rand([
+        `Harcamalarda denge önemli.`,
+        `Küçük masraflar birikebilir.`,
+        `Gelir-gider dengesini gözden geçir.`,
+      ]),
+      kariyer: rand([
+        `İş tarafında tempo artıyor.`,
+        `Yeni bir sorumluluk gündeme gelebilir.`,
+        `Planlı hareket etmek avantaj sağlar.`,
+      ]),
+      saglik: rand([
+        `Uyku düzenine dikkat.`,
+        `Kısa yürüyüşler iyi gelir.`,
+        `Enerjini dengede tut.`,
+      ]),
     },
   };
 }
+
 
 const outDir = path.join(process.cwd(), "src", "data", "readings");
 fs.mkdirSync(outDir, { recursive: true });

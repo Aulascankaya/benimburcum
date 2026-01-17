@@ -5,6 +5,7 @@ import Tabs from "../components/Tabs";
 import ReadingCard from "../components/ReadingCard";
 import Seo from "../components/Seo";
 import AdSlot from "../components/AdSlot";
+import { getDateLabel } from "../utils/dateLabels";
 
 const loaders = {
   koc: () => import("../data/readings/koc.json"),
@@ -29,10 +30,7 @@ export default function Reading() {
 
   if (!isValidSign || !isValidPeriod) return <Navigate to="/404" replace />;
 
-  const signInfo = useMemo(
-    () => ZODIACS.find((z) => z.slug === sign),
-    [sign]
-  );
+  const signInfo = useMemo(() => ZODIACS.find((z) => z.slug === sign), [sign]);
 
   const Loader = loaders[sign];
 
@@ -76,12 +74,19 @@ function ReadingAsync({ sign, period, signInfo, Loader }) {
   if (!data) return <div className="text-zinc-400">Yükleniyor…</div>;
 
   const content = data[period];
+  const dynamicDateLabel = getDateLabel(period);
 
   const periodLabel =
-    period === "gunluk" ? "Günlük" : period === "haftalik" ? "Haftalık" : "Aylık";
+    period === "gunluk"
+      ? "Günlük"
+      : period === "haftalik"
+      ? "Haftalık"
+      : "Aylık";
 
   const pageTitle = `${signInfo.name} ${periodLabel} Yorum`;
-  const pageDesc = `${signInfo.name} burcu için ${periodLabel.toLowerCase()} burç yorumu. Aşk, para, kariyer ve sağlık yorumları.`;
+  const pageDesc = `${
+    signInfo.name
+  } burcu için ${periodLabel.toLowerCase()} burç yorumu. Aşk, para, kariyer ve sağlık yorumları.`;
 
   return (
     <div className="space-y-4">
@@ -98,7 +103,7 @@ function ReadingAsync({ sign, period, signInfo, Loader }) {
 
       <ReadingCard
         title={content?.title}
-        dateLabel={content?.dateLabel}
+        dateLabel={dynamicDateLabel}
         sections={content?.sections}
       />
 
